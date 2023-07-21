@@ -25,7 +25,7 @@ public class ClassInfoRepository {
 		List<Map<String,String>>classInfoList =new ArrayList<>();
 		try {
 			Connection con = DriverManager.getConnection(url, user, pwd);
-			String sql = "SELECT * FROM class_info WHERE1=1";
+			String sql = "SELECT * FROM class_info1 WHERE 1=1";
 			PreparedStatement ps = con.prepareStatement(sql);
 			ResultSet rs = ps.executeQuery();
 			while (rs.next()) {
@@ -48,5 +48,8 @@ public class ClassInfoRepository {
 		cl.selectedClassInfoList();
 
 	}
-
+//pageContext
+	//request
+	//session
+	//application
 }

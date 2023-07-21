@@ -1,5 +1,5 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
-    pageEncoding="UTF-8"%>
+	pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html>
 <head>
@@ -7,9 +7,11 @@
 <title>Insert title here</title>
 </head>
 <body>
-안녕하세요
+	<h3>번호 찾기</h3>
+	<form action="/find/check">
+		<input type="text" name="num">
+		<button>찾기</button>
 
-<a href="/calc">계산기</a>
-<a href="/lotto">로또 맞추기</a>
+	</form>
 </body>
 </html>
