@@ -26,9 +26,12 @@
 			<tr>
 				<td>${classInfo.ciNum}</td>
 				<td>${classInfo.ciName}</td>
-				<td><a href=${classInfo.ciDesc}</td>
+			<td><a href="/class-info/view?uiNum=${classInfo.ciNum}">${classInfo.ciDesc}</a></td>
 			</tr>
 		</c:forEach>
+		<tr>
+		<td align="right" colspan="3"><button onclick ="location.href='/class-info/insert'">등록</button>
+		</tr>
 
 
 	</table>
